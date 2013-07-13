@@ -4,11 +4,17 @@
 <title>MIT License</title>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width, initial-scale=0.70;">
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 </head>
 <body>
+<script>
+  $(function() {
+    $(".year").html = new Date().getFullYear();
+    });
+</script>
 <article>
 <h1>The MIT License (MIT)</h1>
-<p>Copyright © <script>new Date().getFullYear()</script></p>
+<p>Copyright © <span class="year"></span> <a href="mailto:license@kylemiller.com">Kyle Miller</a></p>
 
 <p>Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the “Software”), to deal
